@@ -1,0 +1,107 @@
+.family-container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.main-heading {
+  text-align: center;
+  color: #d6336c;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.family-section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #fff;
+  border-left: 5px solid #d6336c;
+  border-radius: 8px;
+}
+
+.family-section h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.family-section p,
+.family-section li {
+  color: #333;
+  line-height: 1.6;
+}
+
+.family-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.family-section li {
+  margin-bottom: 5px;
+}
+
+.icon {
+  color: #d6336c;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.family-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* ========================= */
+/* SOCIAL ICONS WITH COLORS  */
+/* ========================= */
+
+.icon-whatsapp {
+  color: #25D366;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-whatsapp:hover {
+  transform: scale(1.3);
+  color: #128C7E;
+}
+
+.icon-instagram {
+  color: #E1306C;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-instagram:hover {
+  transform: scale(1.3);
+  color: #C13584;
+}
+
+.icon-youtube {
+  color: #FF0000; /* YouTube red */
+  font-size: 1.8rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-youtube:hover {
+  transform: scale(1.3);
+  color: #CC0000; /* darker red */
+}
