@@ -1,33 +1,37 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import ScrollToTop from './components/ScrollToTop';
+import { Routes, Route } from 'react-router-dom'
+import './App.css'
+import ScrollToTop from './components/ScrollToTop'
 
-import HfPhotos from './components/hfPhotos';
-import FsPhotos from './components/fsPhotos';
-import SsPhotos from './components/ssPhotos';
+import HfPhotos from './components/hfPhotos'
+import FsPhotos from './components/fsPhotos'
+import SsPhotos from './components/ssPhotos'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import Login from './components/Login'
+import Navbar from './components/Navbar'
+import MainCard from './components/CardComponent'
+import Brothers from './components/Brothers'
+import ContactUs from './components/ContactUs'
+import AboutFamily from './components/AboutFamily'
+import Events from './components/Events'
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// force redeploy
 
-import Login from './components/Login';
-import Navbar from './components/Navbar';
-import MainCard from './components/CardComponent';
-import Brothers from './components/Brothers';
-import ContactUs from './components/ContactUs';
-import AboutFamily from './components/AboutFamily';
-import Events from './components/Events';
 
 function App() {
   return (
-    <Router>
-       <ScrollToTop />
-      <Routes>
-        {/* Login page without Navbar */}
-        <Route path='/' element={<Login />} />
+    <>
+      <ScrollToTop />
 
-        {/* Home page with Navbar */}
+      <Routes>
+        {/* Login page */}
+        <Route path="/" element={<Login />} />
+
+        {/* Home */}
         <Route
-          path='/home'
+          path="/home"
           element={
             <>
               <Navbar />
@@ -39,9 +43,9 @@ function App() {
           }
         />
 
-        {/* Other pages with Navbar */}
+        {/* Other pages */}
         <Route
-          path='/brothers'
+          path="/brothers"
           element={
             <>
               <Navbar />
@@ -49,8 +53,9 @@ function App() {
             </>
           }
         />
+
         <Route
-          path='/aboutfamily'
+          path="/aboutfamily"
           element={
             <>
               <Navbar />
@@ -60,7 +65,7 @@ function App() {
         />
 
         <Route
-          path='/events'
+          path="/events"
           element={
             <>
               <Navbar />
@@ -69,14 +74,41 @@ function App() {
           }
         />
 
-
-        <Route path="/hf-photos" element={<> <Navbar /> <br /><HfPhotos /></>} />
-         <Route path="/fs-photos" element={<> <Navbar /> <br /><FsPhotos /></>} />
-         <Route path="/ss-photos" element={<> <Navbar /> <br /><SsPhotos /></>} />
-
+        <Route
+          path="/hf-photos"
+          element={
+            <>
+              <Navbar />
+              <br />
+              <HfPhotos />
+            </>
+          }
+        />
 
         <Route
-          path='/contactus'
+          path="/fs-photos"
+          element={
+            <>
+              <Navbar />
+              <br />
+              <FsPhotos />
+            </>
+          }
+        />
+
+        <Route
+          path="/ss-photos"
+          element={
+            <>
+              <Navbar />
+              <br />
+              <SsPhotos />
+            </>
+          }
+        />
+
+        <Route
+          path="/contactus"
           element={
             <>
               <Navbar />
@@ -85,8 +117,8 @@ function App() {
           }
         />
       </Routes>
-    </Router>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

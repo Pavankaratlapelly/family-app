@@ -52,7 +52,7 @@ const AboutFamily = () => {
           </p>
           <div>
             <b>Contact details: </b>
-            <a href="https://wa.me/919989596954" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919989596952" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="icon-whatsapp" />
             </a>
           </div>
